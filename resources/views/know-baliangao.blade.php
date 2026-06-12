@@ -2,10 +2,101 @@
 
 @section('content')
 
+<style>
+    .page-hero {
+        background: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)), url('/images/photo1.jpg');
+        background-size: cover;
+        background-position: center;
+        padding: 90px 0;
+        color: white;
+        border-radius: 0 0 40px 40px;
+    }
+
+    .section-title {
+        font-weight: 800;
+        color: #123c69;
+        margin-bottom: 25px;
+    }
+
+    .content-card {
+        background: #fff;
+        border-radius: 18px;
+        padding: 30px;
+        box-shadow: 0 10px 30px rgba(0,0,0,.08);
+        margin-bottom: 25px;
+    }
+
+    .side-img {
+        height: 220px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 18px;
+        box-shadow: 0 10px 25px rgba(0,0,0,.15);
+    }
+
+    .barangay-list {
+        columns: 2;
+        padding-left: 20px;
+    }
+
+    .leader-card,
+    .news-card,
+    .mv-card {
+        border: none;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 10px 25px rgba(0,0,0,.08);
+        transition: .3s;
+    }
+
+    .leader-card:hover,
+    .news-card:hover,
+    .mv-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .leader-img {
+        height: 320px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .news-card img {
+        height: 210px;
+        object-fit: cover;
+    }
+
+    .mayor-section {
+        background: #f8fafc;
+        border-radius: 30px;
+        padding: 50px;
+    }
+
+    .badge-custom {
+        background: #ffb703;
+        color: #000;
+        padding: 8px 18px;
+        border-radius: 30px;
+        font-weight: 600;
+        display: inline-block;
+        margin-bottom: 15px;
+    }
+
+    @media(max-width: 768px) {
+        .barangay-list {
+            columns: 1;
+        }
+
+        .mayor-section {
+            padding: 25px;
+        }
+    }
+</style>
+
+
 <!-- HERO -->
-<section class="page-hero text-center mb-5">
+<section class="page-hero mb-5">
     <div class="container">
-        <span class="badge-custom">Official Municipality Profile</span>
         <h1 class="display-4 fw-bold">Discover Baliangao</h1>
         <p class="lead mt-3">
             A peaceful coastal municipality rich in natural beauty, culture, and community spirit.
