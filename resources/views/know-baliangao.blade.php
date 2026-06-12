@@ -2,71 +2,255 @@
 
 @section('content')
 
-<!-- PAGE HEADER -->
-<section class="page-title">
+<!-- HERO -->
+<section class="page-hero text-center mb-5">
     <div class="container">
-        <h1>DISCOVER BALIANGAO</h1>
+        <span class="badge-custom">Official Municipality Profile</span>
+        <h1 class="display-4 fw-bold">Discover Baliangao</h1>
+        <p class="lead mt-3">
+            A peaceful coastal municipality rich in natural beauty, culture, and community spirit.
+        </p>
     </div>
 </section>
 
-<div class="container mt-5">
 
-    <div class="row">
+<!-- ABOUT -->
+<div class="container mb-5">
+    <div class="row g-4">
 
-        <!-- LEFT CONTENT -->
         <div class="col-lg-8">
 
-            <p>
-                <strong>Baliangao</strong>, officially the <strong>Municipality of Baliangao</strong>, is a coastal municipality in the province of <strong>Misamis Occidental</strong>, located in Region X (Northern Mindanao), Philippines.
-            </p>
+            <div class="content-card">
+                <h2 class="section-title">About Baliangao</h2>
 
-            <p>
-                Baliangao is home to hardworking residents whose primary livelihoods include fishing, agriculture, and small businesses.
-            </p>
+                <p>
+                    <strong>Baliangao</strong>, officially the <strong>Municipality of Baliangao</strong>, is a coastal municipality in the province of <strong>Misamis Occidental</strong>, located in Region X, Northern Mindanao. Facing the Mindanao Sea, the municipality is known for its peaceful communities, rich marine resources, and beautiful coastal landscapes.
+                </p>
 
-            <h3 class="mt-4">Geographical Location</h3>
+                <p>
+                    Baliangao is home to hardworking residents whose primary livelihoods include fishing, agriculture, and small businesses. The municipality continues to grow through sustainable development, environmental protection, and community cooperation.
+                </p>
+            </div>
 
-            <p>
-                Baliangao is located in the northern part of Misamis Occidental.
-            </p>
+            <div class="content-card">
+                <h3 class="section-title">Geographical Location</h3>
+                <p>
+                    Baliangao is located in the northern part of Misamis Occidental. It is bounded by the Mindanao Sea to the north, Sapang Dalaga and Calamba to the south, Plaridel to the east, and Murcielagos Bay to the west. The municipality is approximately 23 kilometers from the provincial capital, Oroquieta City.
+                </p>
+            </div>
 
-            <h3 class="mt-4">Barangays</h3>
+            <div class="content-card">
+                <h3 class="section-title">Barangays</h3>
+                <p>The municipality is politically subdivided into fifteen (15) barangays:</p>
 
-            <ul>
-                <li>Del Pilar</li>
-                <li>Landing</li>
-                <li>Lumipac</li>
-                <li>Lusot</li>
-                <li>Mabini</li>
-                <li>Magsaysay</li>
-                <li>Misom</li>
-                <li>Mitacas</li>
-                <li>Naburos</li>
-                <li>Northern Poblacion</li>
-                <li>Punta Miray</li>
-                <li>Punta Sulong</li>
-                <li>Sinian</li>
-                <li>Southern Poblacion</li>
-                <li>Tugas</li>
-            </ul>
+                <ul class="barangay-list">
+                    <li>Del Pilar</li>
+                    <li>Landing</li>
+                    <li>Lumipac</li>
+                    <li>Lusot</li>
+                    <li>Mabini</li>
+                    <li>Magsaysay</li>
+                    <li>Misom</li>
+                    <li>Mitacas</li>
+                    <li>Naburos</li>
+                    <li>Northern Poblacion</li>
+                    <li>Punta Miray</li>
+                    <li>Punta Sulong</li>
+                    <li>Sinian</li>
+                    <li>Southern Poblacion</li>
+                    <li>Tugas</li>
+                </ul>
+            </div>
+
+            <div class="content-card">
+                <h3 class="section-title">History</h3>
+                <p>
+                    During the Spanish and American colonial periods, Baliangao was part of the larger province of Misamis. When the province was divided in 1929, Baliangao became one of the municipalities of Misamis Occidental.
+                </p>
+
+                <p>
+                    In 1957, several barrios were separated from Baliangao to form the municipality of Sapang Dalaga. Despite these changes, Baliangao continued to develop as a thriving coastal municipality.
+                </p>
+            </div>
+
+            <div class="content-card">
+                <h3 class="section-title">Environment and Natural Resources</h3>
+                <p>
+                    One of the municipality’s most valuable environmental areas is the <strong>Baliangao Protected Landscape and Seascape</strong>, which includes mangrove forests, seagrass beds, coral reefs, and wetlands. This protected area plays a vital role in biodiversity conservation, coastal protection, and marine sustainability.
+                </p>
+            </div>
 
         </div>
 
-        <!-- RIGHT SIDE IMAGES -->
         <div class="col-lg-4">
+            <div class="d-flex flex-column gap-4 sticky-top" style="top: 100px;">
+                <img src="/images/photo1.jpg" class="side-img" alt="Baliangao Coast">
+                <img src="/images/photo2.jpg" class="side-img" alt="Mangrove Forest">
+                <img src="/images/photo3.png" class="side-img" alt="Community Life">
+            </div>
+        </div>
 
-            <div class="d-flex flex-column gap-3">
+    </div>
+</div>
 
-                <img src="/images/photo1.jpg" class="img-fluid rounded shadow" alt="">
-                <img src="/images/photo2.jpg" class="img-fluid rounded shadow" alt="">
-                <img src="/images/photo3.png" class="img-fluid rounded shadow" alt="">
 
+<!-- MUNICIPAL LEADERSHIP -->
+<section class="py-5 bg-light">
+    <div class="container">
+
+        <h2 class="text-center section-title">Municipal Leadership</h2>
+
+        <div class="row g-4 justify-content-center">
+
+            <div class="col-md-5">
+                <div class="card leader-card text-center">
+                    <img src="/images/photo1.jpg" class="leader-img" alt="Municipal Mayor">
+                    <div class="card-body">
+                        <h4 class="fw-bold">Hon. Golda Catherine June Y. Resma</h4>
+                        <p class="text-muted mb-0">Municipal Mayor</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-5">
+                <div class="card leader-card text-center">
+                    <img src="/images/photo2.jpg" class="leader-img" alt="Municipal Vice Mayor">
+                    <div class="card-body">
+                        <h4 class="fw-bold">Hon. Agne V. Yap Sr.</h4>
+                        <p class="text-muted mb-0">Municipal Vice Mayor</p>
+                    </div>
+                </div>
             </div>
 
         </div>
 
     </div>
+</section>
 
-</div>
+
+<!-- MAYOR MESSAGE -->
+<section class="py-5">
+    <div class="container">
+
+        <div class="mayor-section">
+            <div class="row align-items-center g-4">
+
+                <div class="col-md-4 text-center">
+                    <img src="/images/photo1.jpg" class="img-fluid rounded-4 shadow" alt="Mayor">
+                </div>
+
+                <div class="col-md-8">
+                    <span class="badge-custom">Mayor's Message</span>
+                    <h2 class="section-title">A Message from the Municipal Mayor</h2>
+
+                    <p>
+                        Warm greetings to all residents, visitors, and partners of the Municipality of Baliangao.
+                    </p>
+
+                    <p>
+                        It is my privilege to serve the people of Baliangao as your Municipal Mayor. Our municipality continues to move forward through unity, dedication, and strong cooperation among our citizens and public servants.
+                    </p>
+
+                    <p>
+                        The local government remains committed to delivering efficient public service, promoting sustainable development, and protecting our natural resources for future generations.
+                    </p>
+
+                    <p class="fw-bold mt-4">
+                        Hon. Golda Catherine June Y. Resma<br>
+                        <span class="text-muted">Municipal Mayor</span>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- MISSION AND VISION -->
+<section class="py-5 bg-light">
+    <div class="container">
+
+        <h2 class="text-center section-title">Mission and Vision</h2>
+
+        <div class="row g-4">
+
+            <div class="col-md-6">
+                <div class="card mv-card h-100">
+                    <div class="card-body text-center p-5">
+                        <h3 class="fw-bold text-primary">Vision</h3>
+                        <p>
+                            A progressive, peaceful, and environmentally sustainable municipality with empowered citizens and responsive governance.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card mv-card h-100">
+                    <div class="card-body text-center p-5">
+                        <h3 class="fw-bold text-success">Mission</h3>
+                        <p>
+                            To deliver efficient public service, promote inclusive development, protect natural resources, and improve the quality of life of every Baliangaonon.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- NEWS -->
+<section class="py-5">
+    <div class="container">
+
+        <h2 class="text-center section-title">Latest News</h2>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="card news-card h-100">
+                    <img src="/images/photo3.png" class="card-img-top" alt="News">
+                    <div class="card-body">
+                        <h5 class="fw-bold">Barangay Sinian Recognized Nationally</h5>
+                        <p>
+                            Barangay Sinian has become a national model for Katarungang Pambarangay, attracting visitors from other municipalities.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card news-card h-100">
+                    <img src="/images/photo3.png" class="card-img-top" alt="News">
+                    <div class="card-body">
+                        <h5 class="fw-bold">Environmental Protection Programs</h5>
+                        <p>
+                            The municipality strengthens mangrove rehabilitation and coastal protection initiatives to preserve marine biodiversity.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card news-card h-100">
+                    <img src="/images/photo3.png" class="card-img-top" alt="News">
+                    <div class="card-body">
+                        <h5 class="fw-bold">Community Development Projects</h5>
+                        <p>
+                            Infrastructure development and community programs continue to improve the quality of life for residents.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
 
 @endsection
