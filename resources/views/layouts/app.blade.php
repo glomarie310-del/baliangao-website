@@ -16,8 +16,8 @@
 <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 
 <!-- FAVICON / TAB LOGO -->
-<link rel="icon" type="image/png" sizes="32x32" href="{{ asset('images/favicon.png') }}">
-<link rel="shortcut icon" href="{{ asset('images/favicon.png') }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon.png') }}?v=3">
+<link rel="shortcut icon" href="{{ asset('favicon.png') }}?v=3">
 
 </head>
     <style>
