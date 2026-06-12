@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import { Link } from '@inertiajs/vue3';
 import AppLogoIcon from '@/components/AppLogoIcon.vue';
-import { home } from '@/routes';
+
+const home = () => '/';
 
 defineProps<{
     title?: string;
@@ -29,13 +30,16 @@ defineProps<{
                         </div>
                         <span class="sr-only">{{ title }}</span>
                     </Link>
+
                     <div class="space-y-2 text-center">
                         <h1 class="text-xl font-medium">{{ title }}</h1>
+
                         <p class="text-center text-sm text-muted-foreground">
                             {{ description }}
                         </p>
                     </div>
                 </div>
+
                 <slot />
             </div>
         </div>
