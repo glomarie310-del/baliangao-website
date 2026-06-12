@@ -1,8 +1,8 @@
 <div style="background:#ffc107;color:black;font-size:13px;">
 <div class="container d-flex justify-content-between py-2">
 
-<div>
-The Official Website of the Local Government of Baliangao
+<div class="fst-italic">
+    The Official Website of the Local Government of Baliangao
 </div>
 
 <!-- Right side -->
