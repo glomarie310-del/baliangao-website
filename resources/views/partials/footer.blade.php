@@ -7,7 +7,7 @@
 .footer-modern h5 {
     color: #ffc107;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
 
 .footer-modern a {
@@ -21,7 +21,17 @@
 }
 
 .footer-logo {
-    max-height: 90px;
+    max-width: 260px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.footer-modern p,
+.footer-modern li,
+.footer-modern small {
+    line-height: 1.7;
 }
 
 .footer-divider {
@@ -29,8 +39,8 @@
 }
 
 .social-icon {
-    width: 40px;
-    height: 40px;
+    width: 42px;
+    height: 42px;
     border-radius: 50%;
     background: rgba(255,255,255,.1);
     display: inline-flex;
@@ -45,6 +55,16 @@
     background: #ffc107;
     color: #000;
 }
+
+@media(max-width: 768px) {
+    .footer-logo {
+        max-width: 220px;
+    }
+
+    .footer-modern {
+        text-align: center;
+    }
+}
 </style>
 
 <footer class="footer-modern pt-5">
@@ -53,130 +73,63 @@
 
 <div class="row g-5">
 
-    <!-- LGU INFO -->
     <div class="col-lg-4">
+        <img src="{{ asset('images/logo.png') }}"
+             class="footer-logo"
+             alt="LGU Baliangao">
 
-        <div class="d-flex align-items-center mb-3">
+        <h4 class="fw-bold mb-1">Municipality of Baliangao</h4>
+        <small>Misamis Occidental, Philippines</small>
 
-            <img src="{{ asset('images/logo.png') }}"
-                 class="footer-logo me-3"
-                 alt="LGU Baliangao">
-
-            <div>
-                <h4 class="mb-0 fw-bold">
-                    Municipality of Baliangao
-                </h4>
-
-                <small>
-                    Misamis Occidental, Philippines
-                </small>
-            </div>
-
-        </div>
-
-        <p>
+        <p class="mt-3">
             The Official Website of the Local Government Unit of Baliangao.
             Providing transparent governance, efficient public services,
             and sustainable community development.
         </p>
 
         <div class="mt-4">
-
-            <a href="https://www.facebook.com/onesweet.asenso.baliangao/"
-               target="_blank"
-               class="social-icon">
+            <a href="https://www.facebook.com/onesweet.asenso.baliangao/" target="_blank" class="social-icon">
                 <i class="fab fa-facebook-f"></i>
             </a>
 
-            <a href="{{ url('/contact') }}"
-               class="social-icon">
+            <a href="{{ url('/contact') }}" class="social-icon">
                 <i class="fas fa-envelope"></i>
             </a>
 
-            <a href="#"
-               class="social-icon">
+            <a href="#" class="social-icon">
                 <i class="fas fa-phone"></i>
             </a>
-
         </div>
-
     </div>
 
-
-    <!-- QUICK LINKS -->
     <div class="col-lg-2 col-md-6">
-
         <h5>Quick Links</h5>
-
         <ul class="list-unstyled">
-
-            <li class="mb-2">
-                <a href="{{ url('/') }}">Home</a>
-            </li>
-
-            <li class="mb-2">
-                <a href="{{ url('/discover') }}">Discover Baliangao</a>
-            </li>
-
-            <li class="mb-2">
-                <a href="{{ url('/tourism') }}">Tourism</a>
-            </li>
-
-            <li class="mb-2">
-                <a href="{{ url('/news') }}">News & Updates</a>
-            </li>
-
-            <li class="mb-2">
-                <a href="{{ url('/contact') }}">Contact Us</a>
-            </li>
-
+            <li class="mb-2"><a href="{{ url('/') }}">Home</a></li>
+            <li class="mb-2"><a href="{{ url('/discover') }}">Discover Baliangao</a></li>
+            <li class="mb-2"><a href="{{ url('/tourism') }}">Tourism</a></li>
+            <li class="mb-2"><a href="{{ url('/news') }}">News & Updates</a></li>
+            <li class="mb-2"><a href="{{ url('/contact') }}">Contact Us</a></li>
         </ul>
-
     </div>
 
-
-    <!-- SERVICES -->
     <div class="col-lg-3 col-md-6">
-
         <h5>Online Services</h5>
-
         <ul class="list-unstyled">
-
             <li class="mb-2">
-                <a href="https://elgu-baliangao-misamis-occidental.e.gov.ph"
-                   target="_blank">
-                    Business Permit
-                </a>
+                <a href="https://elgu-baliangao-misamis-occidental.e.gov.ph" target="_blank">Business Permit</a>
             </li>
-
             <li class="mb-2">
-                <a href="https://elgu-baliangao-misamis-occidental.e.gov.ph"
-                   target="_blank">
-                    Building Permit
-                </a>
+                <a href="https://elgu-baliangao-misamis-occidental.e.gov.ph" target="_blank">Building Permit</a>
             </li>
-
+            <li class="mb-2"><a href="#">Online Payment</a></li>
             <li class="mb-2">
-                <a href="#">
-                    Online Payment
-                </a>
+                <a href="https://csc.gov.ph/career/" target="_blank">Career Opportunities</a>
             </li>
-
-            <li class="mb-2">
-                <a href="https://csc.gov.ph/career/"
-                   target="_blank">
-                    Career Opportunities
-                </a>
-            </li>
-
         </ul>
-
     </div>
 
-
-    <!-- CONTACT INFO -->
     <div class="col-lg-3">
-
         <h5>Contact Information</h5>
 
         <p class="mb-2">
@@ -199,35 +152,20 @@
             Monday - Friday<br>
             8:00 AM - 5:00 PM
         </p>
-
     </div>
 
 </div>
 
-
-<!-- BOTTOM COPYRIGHT -->
 <div class="footer-divider mt-5 pt-4 pb-4">
+    <div class="row align-items-center">
+        <div class="col-md-6">
+            <small>© 2026 Municipality of Baliangao. All Rights Reserved.</small>
+        </div>
 
-<div class="row align-items-center">
-
-    <div class="col-md-6">
-
-        <small>
-            © 2026 Municipality of Baliangao. All Rights Reserved.
-        </small>
-
+        <div class="col-md-6 text-md-end">
+            <small>Official Government Website</small>
+        </div>
     </div>
-
-    <div class="col-md-6 text-md-end">
-
-        <small>
-            Official Government Website
-        </small>
-
-    </div>
-
-</div>
-
 </div>
 
 </div>
