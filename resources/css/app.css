@@ -171,17 +171,17 @@
     }
 }
 .topbar {
-    background: #f7941d;
+    background-color: #f7941d !important;
+    color: white !important;
     font-size: 14px;
 }
 
 .topbar a {
-    color: white;
-    transition: 0.3s;
+    color: white !important;
 }
 
 .topbar a:hover {
-    color: #fff3cd;
+    color: #fff3cd !important;
 }
 
 .navbar {

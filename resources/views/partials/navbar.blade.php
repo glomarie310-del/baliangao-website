@@ -13,7 +13,6 @@
                 alt="Philippine Flag"
                 height="18"
                 class="me-2">
-
             <span>|</span>
 
             <span id="datetime"></span>
