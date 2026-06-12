@@ -1,20 +1,32 @@
-<div style="background:#ffc107;color:black;font-size:13px;">
-<div class="container d-flex justify-content-between py-2">
+<div style="background:#003b73;color:white;font-size:14px;">
+    <div class="container d-flex justify-content-between align-items-center py-2">
 
-<div class="fst-italic">
-    The Official Website of the Local Government of Baliangao
+        <div class="fst-italic">
+            The Official Website of the Local Government of Baliangao
+        </div>
+
+        <div class="d-flex align-items-center gap-3">
+            <span>🇵🇭</span>
+            <span>|</span>
+
+            <span id="datetime"></span>
+            <span>|</span>
+
+            <a href="https://www.facebook.com/onesweet.asenso.baliangao/" target="_blank" class="text-white text-decoration-none">
+                <i class="fab fa-facebook-f me-1"></i> Facebook
+            </a>
+
+            <a href="{{ url('/contact') }}" class="text-white text-decoration-none">
+                <i class="fas fa-phone-alt me-1"></i> Contact Us
+            </a>
+
+            <a href="https://www.gov.ph/" target="_blank" class="text-white text-decoration-none fw-bold">
+                GOV.PH
+            </a>
+        </div>
+
+    </div>
 </div>
-
-<!-- Right side -->
-<div class="d-flex align-items-center gap-3">
-
-<span id="datetime"></span>
-
-<a href="https://www.facebook.com/onesweet.asenso.baliangao/" target="_blank" class="text-black text-decoration-none">Facebook</a>
-<a href="{{ url('/contact') }}" class="text-black text-decoration-none">Contact Us</a>
-<a href="https://www.gov.ph/" target="_blank" class="text-black text-decoration-none" style="font-family: Arial; font-weight: bold; font-color: white">
-GOV.PH
-</a>
 
 </div>
 </div>
