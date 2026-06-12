@@ -170,6 +170,19 @@
         @apply bg-background text-foreground;
     }
 }
+.topbar {
+    background: #f7941d;
+    font-size: 14px;
+}
+
+.topbar a {
+    color: white;
+    transition: 0.3s;
+}
+
+.topbar a:hover {
+    color: #fff3cd;
+}
 
 .navbar {
     height: 60px;

@@ -1,41 +1,45 @@
-<div style="background:#003b73;color:white;font-size:14px;">
+<div class="topbar text-white">
     <div class="container d-flex justify-content-between align-items-center py-2">
 
+        <!-- Left Side -->
         <div class="fst-italic">
             The Official Website of the Local Government of Baliangao
         </div>
 
+        <!-- Right Side -->
         <div class="d-flex align-items-center gap-3">
-            <span>🇵🇭</span>
+
+            <img src="{{ asset('images/ph-flag.png') }}"
+                alt="Philippine Flag"
+                height="18"
+                class="me-2">
+
             <span>|</span>
 
             <span id="datetime"></span>
             <span>|</span>
 
-            <a href="https://www.facebook.com/onesweet.asenso.baliangao/" target="_blank" class="text-white text-decoration-none">
+            <a href="https://www.facebook.com/onesweet.asenso.baliangao/"
+               target="_blank"
+               class="text-white text-decoration-none">
                 <i class="fab fa-facebook-f me-1"></i> Facebook
             </a>
 
-            <a href="{{ url('/contact') }}" class="text-white text-decoration-none">
+            <a href="{{ url('/contact') }}"
+               class="text-white text-decoration-none">
                 <i class="fas fa-phone-alt me-1"></i> Contact Us
             </a>
 
-            <a href="https://www.gov.ph/" target="_blank" class="text-white text-decoration-none fw-bold">
+            <a href="https://www.gov.ph/"
+               target="_blank"
+               class="text-white text-decoration-none fw-bold">
                 GOV.PH
             </a>
+
         </div>
 
     </div>
 </div>
-
-</div>
-</div>
-
-</div>
-</div>
-</div>
-</div>
-
 
 <nav class="navbar navbar-expand-lg bg-light shadow-sm">
 <div class="container">
