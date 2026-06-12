@@ -365,3 +365,16 @@ padding:60px 0;
 }
 
 
+.page-title {
+    background: #ff8c00;
+    padding: 60px 0;
+    margin-bottom: 40px;
+}
+
+.page-title h1 {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0;
+    text-transform: uppercase;
+}
