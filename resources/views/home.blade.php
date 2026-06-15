@@ -112,7 +112,7 @@
                 </p>
 
                 <div class="mt-4">
-                    <a href="{{ url('/discover') }}" class="btn btn-warning rounded-pill px-4 me-2">
+                    <a href="{{ url('/tourism') }}" class="btn btn-primary rounded-pill px-4">
                         Explore Baliangao
                     </a>
 
