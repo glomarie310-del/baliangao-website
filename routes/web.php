@@ -8,6 +8,10 @@ Route::get('/', function () {
 
 Route::get('/know-baliangao', function () {
     return view('know-baliangao');
+})->name('know-baliangao');
+
+Route::get('/know-baliangao', function () {
+    return view('know-baliangao');
 });
 
 Route::get('/tourism', function () {
