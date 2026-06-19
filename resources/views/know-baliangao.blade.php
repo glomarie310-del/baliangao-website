@@ -3,136 +3,230 @@
 @section('content')
 
 <style>
+.page-hero {
+    background:
+        linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)),
+        url('{{ asset("images/background1.jpg") }}');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 130px 0;
+}
+
+.hero-badge {
+    background: #ffc107;
+    color: #000;
+    display: inline-block;
+    padding: 8px 18px;
+    border-radius: 10px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.page-hero h1 {
+    font-size: 70px;
+    font-weight: 800;
+}
+
+.section-title {
+    color: #123c69;
+    font-weight: 800;
+}
+
+.content-card,
+.stat-card,
+.leader-card,
+.mv-card,
+.news-card {
+    border: none;
+    border-radius: 22px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+    transition: .3s;
+    background: white;
+}
+
+.content-card {
+    padding: 30px;
+    margin-bottom: 25px;
+}
+
+.content-card:hover,
+.stat-card:hover,
+.leader-card:hover,
+.mv-card:hover,
+.news-card:hover {
+    transform: translateY(-6px);
+}
+
+.stat-card {
+    padding: 28px;
+    text-align: center;
+}
+
+.stat-number {
+    color: #f0ad00;
+    font-size: 38px;
+    font-weight: 800;
+}
+
+.side-img {
+    height: 230px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.15);
+}
+
+.barangay-list {
+    columns: 2;
+    padding-left: 20px;
+}
+
+.leader-img {
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.leader-card {
+    overflow: hidden;
+    border-top: 5px solid #ffc107;
+}
+
+.mayor-section {
+    background: linear-gradient(135deg, #123c69, #1d5b91);
+    color: white;
+    border-radius: 28px;
+    padding: 50px;
+}
+
+.mayor-section .section-title,
+.mayor-section .text-muted {
+    color: white !important;
+}
+
+.badge-custom {
+    background: #ffc107;
+    color: #000;
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.news-card {
+    overflow: hidden;
+}
+
+.news-card img {
+    height: 220px;
+    object-fit: cover;
+}
+
+.support-card {
+    background: linear-gradient(135deg, #123c69, #1d5b91);
+    color: white;
+    border-radius: 28px;
+    padding: 45px;
+}
+
+@media(max-width: 768px) {
     .page-hero {
-        background: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)), url('/images/background1.jpg');
-        background-size: cover;
-        background-position: center;
-        padding: 90px 0;
-        color: white;
-        border-radius: 0 0 40px 40px;
+        padding: 85px 0;
     }
 
-    .section-title {
-        font-weight: 800;
-        color: #123c69;
-        margin-bottom: 25px;
-    }
-
-    .content-card {
-        background: #fff;
-        border-radius: 18px;
-        padding: 30px;
-        box-shadow: 0 10px 30px rgba(0,0,0,.08);
-        margin-bottom: 25px;
-    }
-
-    .side-img {
-        height: 220px;
-        width: 100%;
-        object-fit: cover;
-        border-radius: 18px;
-        box-shadow: 0 10px 25px rgba(0,0,0,.15);
+    .page-hero h1 {
+        font-size: 42px;
     }
 
     .barangay-list {
-        columns: 2;
-        padding-left: 20px;
+        columns: 1;
     }
 
-    .leader-card,
-    .news-card,
-    .mv-card {
-        border: none;
-        border-radius: 20px;
-        overflow: hidden;
-        box-shadow: 0 10px 25px rgba(0,0,0,.08);
-        transition: .3s;
+    .mayor-section,
+    .support-card {
+        padding: 30px;
     }
-
-    .leader-card:hover,
-    .news-card:hover,
-    .mv-card:hover {
-        transform: translateY(-5px);
-    }
-
-    .leader-img {
-        height: 320px;
-        width: 100%;
-        object-fit: cover;
-    }
-
-    .news-card img {
-        height: 210px;
-        object-fit: cover;
-    }
-
-    .mayor-section {
-        background: #f8fafc;
-        border-radius: 30px;
-        padding: 50px;
-    }
-
-    .badge-custom {
-        background: #ffb703;
-        color: #000;
-        padding: 8px 18px;
-        border-radius: 30px;
-        font-weight: 600;
-        display: inline-block;
-        margin-bottom: 15px;
-    }
-
-    @media(max-width: 768px) {
-        .barangay-list {
-            columns: 1;
-        }
-
-        .mayor-section {
-            padding: 25px;
-        }
-    }
+}
 </style>
 
-
-<!-- HERO -->
 <section class="page-hero mb-5">
     <div class="container">
-        <h1 class="display-4 fw-bold">Discover Baliangao</h1>
-        <p class="lead mt-3">
-            A peaceful coastal municipality rich in natural beauty, culture, and community spirit.
+        <span class="hero-badge">Municipal Profile</span>
+
+        <h1>Know Baliangao</h1>
+
+        <p class="lead mt-3" style="max-width: 750px;">
+            A peaceful coastal municipality rich in natural beauty, culture, history, and community spirit.
         </p>
     </div>
 </section>
 
+<section class="py-5">
+    <div class="container">
+        <div class="row g-4">
 
-<!-- ABOUT -->
+            <div class="col-md-3">
+                <div class="stat-card">
+                    <div class="stat-number">15</div>
+                    <p class="mb-0">Barangays</p>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="stat-card">
+                    <div class="stat-number">23km</div>
+                    <p class="mb-0">From Oroquieta City</p>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="stat-card">
+                    <div class="stat-number">1957</div>
+                    <p class="mb-0">Historical Milestone</p>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="stat-card">
+                    <div class="stat-number">100%</div>
+                    <p class="mb-0">Community Commitment</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
 <div class="container mb-5">
     <div class="row g-4">
 
         <div class="col-lg-8">
 
             <div class="content-card">
-                <h2 class="section-title">About Baliangao</h2>
+                <span class="text-warning fw-bold">ABOUT THE MUNICIPALITY</span>
+                <h2 class="section-title mt-2">About Baliangao</h2>
 
                 <p>
-                    <strong>Baliangao</strong>, officially the <strong>Municipality of Baliangao</strong>, is a coastal municipality in the province of <strong>Misamis Occidental</strong>, located in Region X, Northern Mindanao. Facing the Mindanao Sea, the municipality is known for its peaceful communities, rich marine resources, and beautiful coastal landscapes.
+                    <strong>Baliangao</strong>, officially the <strong>Municipality of Baliangao</strong>, is a coastal municipality in the province of <strong>Misamis Occidental</strong>, located in Region X, Northern Mindanao.
                 </p>
 
                 <p>
-                    Baliangao is home to hardworking residents whose primary livelihoods include fishing, agriculture, and small businesses. The municipality continues to grow through sustainable development, environmental protection, and community cooperation.
+                    Facing the Mindanao Sea, Baliangao is known for its peaceful communities, rich marine resources, beautiful coastal landscapes, and hardworking residents whose livelihoods include fishing, agriculture, and small businesses.
                 </p>
             </div>
 
             <div class="content-card">
                 <h3 class="section-title">Geographical Location</h3>
                 <p>
-                    Baliangao is located in the northern part of Misamis Occidental. It is bounded by the Mindanao Sea to the north, Sapang Dalaga and Calamba to the south, Plaridel to the east, and Murcielagos Bay to the west. The municipality is approximately 23 kilometers from the provincial capital, Oroquieta City.
+                    Baliangao is located in the northern part of Misamis Occidental. It is bounded by the Mindanao Sea to the north, Sapang Dalaga and Calamba to the south, Plaridel to the east, and Murcielagos Bay to the west.
                 </p>
             </div>
 
             <div class="content-card">
                 <h3 class="section-title">Barangays</h3>
-                <p>The municipality is politically subdivided into fifteen (15) barangays:</p>
+                <p>The municipality is politically subdivided into fifteen barangays:</p>
 
                 <ul class="barangay-list">
                     <li>Del Pilar</li>
@@ -167,7 +261,7 @@
             <div class="content-card">
                 <h3 class="section-title">Environment and Natural Resources</h3>
                 <p>
-                    One of the municipality’s most valuable environmental areas is the <strong>Baliangao Protected Landscape and Seascape</strong>, which includes mangrove forests, seagrass beds, coral reefs, and wetlands. This protected area plays a vital role in biodiversity conservation, coastal protection, and marine sustainability.
+                    One of the municipality’s most valuable environmental areas is the <strong>Baliangao Protected Landscape and Seascape</strong>, which includes mangrove forests, seagrass beds, coral reefs, and wetlands.
                 </p>
             </div>
 
@@ -184,12 +278,13 @@
     </div>
 </div>
 
-
-<!-- MUNICIPAL LEADERSHIP -->
 <section class="py-5 bg-light">
     <div class="container">
 
-        <h2 class="text-center section-title">Municipal Leadership</h2>
+        <div class="text-center mb-5">
+            <span class="text-warning fw-bold">LOCAL GOVERNMENT</span>
+            <h2 class="section-title">Municipal Leadership</h2>
+        </div>
 
         <div class="row g-4 justify-content-center">
 
@@ -218,8 +313,6 @@
     </div>
 </section>
 
-
-<!-- MAYOR MESSAGE -->
 <section class="py-5">
     <div class="container">
 
@@ -246,9 +339,9 @@
                         The local government remains committed to delivering efficient public service, promoting sustainable development, and protecting our natural resources for future generations.
                     </p>
 
-                    <p class="fw-bold mt-4">
+                    <p class="fw-bold mt-4 mb-0">
                         Hon. Golda Catherine June Y. Resma<br>
-                        <span class="text-muted">Municipal Mayor</span>
+                        <span>Municipal Mayor</span>
                     </p>
                 </div>
 
@@ -258,19 +351,21 @@
     </div>
 </section>
 
-
-<!-- MISSION AND VISION -->
 <section class="py-5 bg-light">
     <div class="container">
 
-        <h2 class="text-center section-title">Mission and Vision</h2>
+        <div class="text-center mb-5">
+            <span class="text-warning fw-bold">OUR DIRECTION</span>
+            <h2 class="section-title">Mission and Vision</h2>
+        </div>
 
         <div class="row g-4">
 
             <div class="col-md-6">
                 <div class="card mv-card h-100">
                     <div class="card-body text-center p-5">
-                        <h3 class="fw-bold text-primary">Vision</h3>
+                        <i class="fas fa-eye fa-3x text-warning mb-3"></i>
+                        <h3 class="fw-bold">Vision</h3>
                         <p>
                             A progressive, peaceful, and environmentally sustainable municipality with empowered citizens and responsive governance.
                         </p>
@@ -281,7 +376,8 @@
             <div class="col-md-6">
                 <div class="card mv-card h-100">
                     <div class="card-body text-center p-5">
-                        <h3 class="fw-bold text-success">Mission</h3>
+                        <i class="fas fa-bullseye fa-3x text-warning mb-3"></i>
+                        <h3 class="fw-bold">Mission</h3>
                         <p>
                             To deliver efficient public service, promote inclusive development, protect natural resources, and improve the quality of life of every Baliangaonon.
                         </p>
@@ -294,51 +390,31 @@
     </div>
 </section>
 
-
-<!-- NEWS -->
 <section class="py-5">
     <div class="container">
 
-        <h2 class="text-center section-title">Latest News</h2>
+        <div class="support-card">
+            <div class="row align-items-center g-4">
 
-        <div class="row g-4">
+                <div class="col-lg-8">
+                    <span class="badge bg-warning text-dark mb-3">Explore More</span>
 
-            <div class="col-md-4">
-                <div class="card news-card h-100">
-                    <img src="/images/photo3.png" class="card-img-top" alt="News">
-                    <div class="card-body">
-                        <h5 class="fw-bold">Barangay Sinian Recognized Nationally</h5>
-                        <p>
-                            Barangay Sinian has become a national model for Katarungang Pambarangay, attracting visitors from other municipalities.
-                        </p>
-                    </div>
+                    <h2 class="fw-bold">
+                        Discover the Beauty of Baliangao
+                    </h2>
+
+                    <p class="mb-0">
+                        Learn more about tourism destinations, municipal services, public updates, and development programs.
+                    </p>
                 </div>
-            </div>
 
-            <div class="col-md-4">
-                <div class="card news-card h-100">
-                    <img src="/images/photo3.png" class="card-img-top" alt="News">
-                    <div class="card-body">
-                        <h5 class="fw-bold">Environmental Protection Programs</h5>
-                        <p>
-                            The municipality strengthens mangrove rehabilitation and coastal protection initiatives to preserve marine biodiversity.
-                        </p>
-                    </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a href="{{ url('/tourism') }}" class="btn btn-warning rounded-pill px-4">
+                        Explore Tourism
+                    </a>
                 </div>
-            </div>
 
-            <div class="col-md-4">
-                <div class="card news-card h-100">
-                    <img src="/images/photo3.png" class="card-img-top" alt="News">
-                    <div class="card-body">
-                        <h5 class="fw-bold">Community Development Projects</h5>
-                        <p>
-                            Infrastructure development and community programs continue to improve the quality of life for residents.
-                        </p>
-                    </div>
-                </div>
             </div>
-
         </div>
 
     </div>
