@@ -4,7 +4,8 @@
 
 <style>
 .page-header {
-    background: linear-gradient(135deg, #123c69, #1d5b91);
+    background: linear-gradient(rgba(15,39,68,.85), rgba(15,39,68,.85)),
+                url('{{ asset("images/background1.jpg") }}');
     color: white;
     padding: 75px 0;
     border-radius: 0 0 35px 35px;

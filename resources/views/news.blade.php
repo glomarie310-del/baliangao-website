@@ -5,7 +5,7 @@
 <style>
 .news-header {
     background: linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
-                url('/images/news1.jpg');
+                url('/images/background1.jpg');
     background-size: cover;
     background-position: center;
     color: white;

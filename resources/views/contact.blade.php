@@ -5,7 +5,7 @@
 <style>
 .contact-header{
     background: linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
-                url('/images/hotline.jpg');
+                url('/images/background1.jpg');
     background-size: cover;
     background-position: center;
     color:white;

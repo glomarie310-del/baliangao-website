@@ -4,7 +4,7 @@
 
 <style>
     .page-hero {
-        background: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)), url('/images/photo1.jpg');
+        background: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)), url('/images/background1.jpg');
         background-size: cover;
         background-position: center;
         padding: 90px 0;
