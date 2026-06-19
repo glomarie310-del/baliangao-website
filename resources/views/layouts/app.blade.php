@@ -1,86 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Local Government Unit of Baliangao - Official</title>
 
-    <!-- Bootstrap -->
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- FontAwesome (ADDED FOR SERVICE ICONS) -->
+    <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-<!-- ICON LIBRARY -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon.png') }}?v=3">
 
-<!-- FAVICON / TAB LOGO -->
-<link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon.png') }}?v=3">
-
-</head>
     <style>
-
-        body{
+        body {
             font-family: Arial, Helvetica, sans-serif;
         }
 
-        .navbar{
-            background:#ffc107;
+        .navbar {
+            background: #ffc107;
         }
 
-        .hero{
-            padding:80px 0;
-            background:#fff8db;
+        .hero {
+            padding: 80px 0;
+            background: #fff8db;
         }
 
-        .service-card{
-        border:1px solid #080808;
-        height:180px;              /* makes it square */
-        display:flex;
-        flex-direction:column;
-        justify-content:center;
-        align-items:center;
-        text-align:center;
-        padding:20px;
-        background:white;
-        transition:.3s;
-}
-
-        .service-card:hover{
-        transform:translateY(-5px);
-        box-shadow:0 10px 20px rgba(0, 0, 0, 0.1);
-}
-
-        .service-icon{
-        font-size:30px;
-        margin-bottom:10px;
-}
-
-        .service-card h5{
-        font-size:14px;
-        margin:0;
-}
-
-        .news{
-            background:#f5f5f5;
-            padding:80px 0;
+        .service-card {
+            border: 1px solid #080808;
+            height: 180px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            background: white;
+            transition: .3s;
         }
 
-        footer{
-            background:#1b1b1b;
-            color:white;
-            padding:60px 0;
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
         }
 
-        footer a{
-            color:#ffc107;
-            text-decoration:none;
+        .service-icon {
+            font-size: 30px;
+            margin-bottom: 10px;
         }
 
+        .service-card h5 {
+            font-size: 14px;
+            margin: 0;
+        }
+
+        .news {
+            background: #f5f5f5;
+            padding: 80px 0;
+        }
+
+        footer {
+            background: #1b1b1b;
+            color: white;
+            padding: 60px 0;
+        }
+
+        footer a {
+            color: #ffc107;
+            text-decoration: none;
+        }
     </style>
-
 </head>
+
 <body>
 
     {{-- Navbar --}}
@@ -92,31 +88,33 @@
     {{-- Footer --}}
     @include('partials.footer')
 
+    <script>
+        function updateDateTime() {
+            const now = new Date();
 
-<script>
+            const options = {
+                weekday: 'long',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            };
 
-function updateDateTime() {
+            const date = now.toLocaleDateString('en-US', options);
+            const time = now.toLocaleTimeString();
 
-    const now = new Date();
+            const datetime = document.getElementById("datetime");
 
-    const options = { 
-        weekday: 'long', 
-        year: 'numeric', 
-        month: 'long', 
-        day: 'numeric'
-    };
+            if (datetime) {
+                datetime.innerHTML = date + " | " + time;
+            }
+        }
 
-    const date = now.toLocaleDateString('en-US', options);
-    const time = now.toLocaleTimeString();
+        setInterval(updateDateTime, 1000);
+        updateDateTime();
+    </script>
 
-    document.getElementById("datetime").innerHTML = date + " | " + time;
-
-}
-
-setInterval(updateDateTime, 1000);
-updateDateTime();
-
-</script>
+    <!-- Bootstrap JS - REQUIRED FOR MOBILE NAVBAR -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>

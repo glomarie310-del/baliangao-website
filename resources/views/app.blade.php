@@ -12,6 +12,7 @@
 
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 <!-- FAVICON / TAB LOGO -->
 <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon.png') }}?v=3"><!-- or if you have PNG: -->
