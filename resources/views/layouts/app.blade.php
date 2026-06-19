@@ -6,9 +6,9 @@
     <title>Local Government Unit of Baliangao - Official</title>
 
     <!-- Favicon / Website Tab Logo -->
-    <link rel="icon" type="image/png" href="{{ asset('lgu-baliangao-favicon.png') }}?v=10">
-    <link rel="shortcut icon" type="image/png" href="{{ asset('lgu-baliangao-favicon.png') }}?v=10">
-    <link rel="apple-touch-icon" href="{{ asset('lgu-baliangao-favicon.png') }}?v=10">
+    <link rel="icon" type="image/png" href="/lgu-baliangao-favicon.png?v=200">
+    <link rel="shortcut icon" type="image/png" href="/lgu-baliangao-favicon.png?v=200">
+    <link rel="apple-touch-icon" href="/lgu-baliangao-favicon.png?v=200">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
