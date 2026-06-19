@@ -4,7 +4,7 @@
 
 <style>
 .tourism-header {
-    background: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)), url('/images/tourism1.jpg');
+    background: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)), url('/images/background1.jpg');
     background-size: cover;
     background-position: center;
     padding: 110px 0;
