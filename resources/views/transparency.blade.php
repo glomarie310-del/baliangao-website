@@ -1,6 +1,3 @@
-Use this version so your **Transparency page** matches your other pages: blue hero, yellow badges, modern cards, and clean LGU style.
-
-```blade
 @extends('layouts.app')
 
 @section('content')
