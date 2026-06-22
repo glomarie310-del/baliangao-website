@@ -106,7 +106,7 @@
         <h5>Quick Links</h5>
         <ul class="list-unstyled">
             <li class="mb-2"><a href="{{ url('/') }}">Home</a></li>
-            <li class="mb-2"><a href="{{ url('/discover') }}">Discover Baliangao</a></li>
+            <li class="mb-2"><a href="{{ url('/know-baliangao') }}">Discover Baliangao</a></li>
             <li class="mb-2"><a href="{{ url('/tourism') }}">Tourism</a></li>
             <li class="mb-2"><a href="{{ url('/news') }}">News & Updates</a></li>
             <li class="mb-2"><a href="{{ url('/contact') }}">Contact Us</a></li>
