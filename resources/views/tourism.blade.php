@@ -112,7 +112,7 @@
             <div class="row g-0">
 
                 <div class="col-lg-6">
-                    <img src="/images/ms2.jpg"
+                    <img src="/images/ms2.jpeg"
                          class="w-100 h-100 featured-img"
                          alt="Bless Amare Sunrise Resort">
                 </div>
