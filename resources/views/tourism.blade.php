@@ -227,7 +227,7 @@
                 <div class="card place-card">
                     <img src="/images/tourism1.jpg" class="place-img card-img-top" alt="Oklahoma and Silangga Island Resorts">
                     <div class="card-body">
-                        <h5 class="fw-bold">Oklahoma & Silangga Island Resorts</h5>
+                        <h5 class="fw-bold">Silangga Island Resorts</h5>
                         <p class="text-muted">Secluded islands off Baliangao</p>
                         <div class="rating">⭐⭐⭐⭐ 4.6</div>
                         <p>Quieter shorelines perfect for snorkeling, kayaking, and exploring the islands.</p>
@@ -239,7 +239,7 @@
                 <div class="card place-card">
                     <img src="/images/tourism1.jpg" class="place-img card-img-top" alt="Borbon and Sam Niza Beaches">
                     <div class="card-body">
-                        <h5 class="fw-bold">Borbon & Sam Niza Beaches</h5>
+                        <h5 class="fw-bold">Sam Niza Beaches</h5>
                         <p class="text-muted">Local Baliangao</p>
                         <div class="rating">⭐⭐⭐⭐ 4.3</div>
                         <p>Smaller local beaches perfect for a relaxed seaside walk or a simple swim.</p>
@@ -251,7 +251,7 @@
                 <div class="card place-card">
                     <img src="/images/tourism1.jpg" class="place-img card-img-top" alt="La Esperanza and Kibulanding Beach Resort">
                     <div class="card-body">
-                        <h5 class="fw-bold">La Esperanza Sea Park & Kibulanding Beach Resort</h5>
+                        <h5 class="fw-bold">Kibulanding Beach Resort</h5>
                         <p class="text-muted">Baliangao Coast</p>
                         <div class="rating">⭐⭐⭐⭐ 4.5</div>
                         <p>Beachfront resorts with amenities for overnight stays, family picnics, and beach activities.</p>
@@ -263,7 +263,7 @@
                 <div class="card place-card">
                     <img src="/images/tourism1.jpg" class="place-img card-img-top" alt="Coral Bay Beach Resort Baliangao">
                     <div class="card-body">
-                        <h5 class="fw-bold">Coral Bay Beach Resort Baliangao</h5>
+                        <h5 class="fw-bold">La Esperanza Beach Resort</h5>
                         <p class="text-muted">Baliangao, Misamis Occidental</p>
                         <div class="rating">⭐⭐⭐⭐ 4.4</div>
                         <p>Laid-back beach club with sandy stretch and sea views — perfect for relaxation and chilling.</p>
