@@ -165,7 +165,7 @@
 
             <div class="col-md-4">
                 <div class="card place-card">
-                    <img src="/images/tourism1.jpg" class="place-img card-img-top" alt="Tamban Beach">
+                    <img src="/images/tamban.jpg" class="place-img card-img-top" alt="Tamban Beach">
                     <div class="card-body">
                         <h5 class="fw-bold">Tamban Beach</h5>
                         <p class="text-muted">Baliangao, Misamis Occidental</p>
@@ -177,7 +177,7 @@
 
             <div class="col-md-4">
                 <div class="card place-card">
-                    <img src="/images/tourism1.jpg" class="place-img card-img-top" alt="Bless Amare Sunrise Resort">
+                    <img src="/images/sunrise.jpg" class="place-img card-img-top" alt="Bless Amare Sunrise Resort">
                     <div class="card-body">
                         <h5 class="fw-bold">Bless Amare Sunrise Resort</h5>
                         <p class="text-muted">Baliangao Coast</p>
@@ -189,7 +189,7 @@
 
             <div class="col-md-4">
                 <div class="card place-card">
-                    <img src="/images/tourism1.jpg" class="place-img card-img-top" alt="Bito-on Beach Resort">
+                    <img src="/images/bitoon.jpg" class="place-img card-img-top" alt="Bito-on Beach Resort">
                     <div class="card-body">
                         <h5 class="fw-bold">Bito-on Beach Resort</h5>
                         <p class="text-muted">Baliangao, Misamis Occidental</p>
@@ -201,7 +201,7 @@
 
             <div class="col-md-4">
                 <div class="card place-card">
-                    <img src="/images/tourism1.jpg" class="place-img card-img-top" alt="Inday-inday Beach Resort">
+                    <img src="/images/inday.jpg" class="place-img card-img-top" alt="Inday-inday Beach Resort">
                     <div class="card-body">
                         <h5 class="fw-bold">Inday-inday Beach Resort</h5>
                         <p class="text-muted">Punta Miray Coast</p>
@@ -213,7 +213,7 @@
 
             <div class="col-md-4">
                 <div class="card place-card">
-                    <img src="/images/tourism1.jpg" class="place-img card-img-top" alt="Cabgan Island">
+                    <img src="/images/cabgan.jpg" class="place-img card-img-top" alt="Cabgan Island">
                     <div class="card-body">
                         <h5 class="fw-bold">Cabgan Island</h5>
                         <p class="text-muted">Accessible by boat from Baliangao</p>
@@ -237,7 +237,7 @@
 
             <div class="col-md-4">
                 <div class="card place-card">
-                    <img src="/images/tourism1.jpg" class="place-img card-img-top" alt="Borbon and Sam Niza Beaches">
+                    <img src="/images/samniza.jpg" class="place-img card-img-top" alt="Borbon and Sam Niza Beaches">
                     <div class="card-body">
                         <h5 class="fw-bold">Sam Niza Beaches</h5>
                         <p class="text-muted">Local Baliangao</p>
