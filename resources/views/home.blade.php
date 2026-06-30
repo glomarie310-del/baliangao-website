@@ -222,7 +222,6 @@
                     <div class="col-md-4">
                         <a href="#" class="service-card">
                             <i class="fas fa-hand-holding-heart service-icon"></i>
-                            <a href="https://www.facebook.com/onesweet.asenso.baliangao/" target="_blank" class="service-card">
                             <p>Social Services</p>
                         </a>
                     </div>
